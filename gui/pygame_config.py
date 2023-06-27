@@ -66,10 +66,6 @@ def load_assets(x_size, y_size):
     agent_img_up = pygame.transform.rotate(agent_img_up, 270)
     assets['arrow_up'] = agent_img_up
 
-    cave_entry_img = pygame.image.load("gui/assets/cave_entry_img.png").convert()
-    cave_entry_img = pygame.transform.scale(cave_entry_img, (x_size, y_size))
-    assets['cave_entry'] = cave_entry_img
-
     assets['font'] = pygame.font.SysFont('Arial', 18)
     assets['q_values_font'] = pygame.font.SysFont('Arial', 15)
 
